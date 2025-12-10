@@ -1,0 +1,324 @@
+﻿<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台灣五大熱門賣場圖文介紹</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #f3f4f6;
+        }
+        .brand-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .brand-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .costco-bg { background: linear-gradient(135deg, #005eb8 0%, #e31837 100%); }
+        .carrefour-bg { background: linear-gradient(135deg, #00338d 0%, #e61b2b 100%); }
+        .pxmart-bg { background: linear-gradient(135deg, #00539f 0%, #e60012 100%); }
+        .rtmart-bg { background: linear-gradient(135deg, #d31245 0%, #ffffff 100%); }
+        .amart-bg { background: linear-gradient(135deg, #f58220 0%, #7ac142 100%); }
+        
+        /* Simulating Image Areas with CSS Patterns */
+        .img-placeholder {
+            background-color: #e5e7eb;
+            background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+            background-size: 10px 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-shopping-cart text-blue-600 text-2xl"></i>
+                <h1 class="text-xl font-bold text-gray-800">台灣賣場大百科</h1>
+            </div>
+            <nav class="hidden md:flex space-x-6 text-gray-600">
+                <a href="#intro" class="hover:text-blue-600 transition">簡介</a>
+                <a href="#ranking" class="hover:text-blue-600 transition">五大霸主</a>
+                <a href="#comparison" class="hover:text-blue-600 transition">特色比較</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="intro" class="relative bg-blue-900 text-white py-16">
+        <div class="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/cartographer.png')]"></div>
+        <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">誰是你心中的購物天堂？</h2>
+            <p class="text-lg md:text-xl text-blue-100 mb-8">
+                從巷口的便利全聯到倉儲巨獸好市多，台灣零售業百花齊放。<br>
+                讓我們一起探索這五大改變台灣人生活方式的量販巨頭。
+            </p>
+            <a href="#ranking" class="inline-block bg-yellow-400 text-blue-900 font-bold py-3 px-8 rounded-full hover:bg-yellow-300 transition shadow-lg transform hover:scale-105">
+                開始探索
+            </a>
+        </div>
+    </section>
+
+    <!-- Main Content Grid -->
+    <main id="ranking" class="max-w-7xl mx-auto px-4 py-12">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-800">台灣前五大零售/量販品牌</h2>
+            <div class="w-24 h-1 bg-blue-500 mx-auto mt-4 rounded"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- 1. Costco 好市多 -->
+            <div class="brand-card bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 flex flex-col h-full">
+                <div class="h-40 costco-bg relative flex items-center justify-center">
+                    <div class="text-white text-center">
+                        <i class="fas fa-warehouse text-5xl mb-2"></i>
+                        <h3 class="text-2xl font-bold tracking-wider">COSTCO</h3>
+                        <p class="text-sm opacity-90">好市多</p>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-yellow-400 text-xs font-bold px-2 py-1 rounded text-blue-900">
+                        美式倉儲 No.1
+                    </div>
+                </div>
+                <div class="p-6 flex-grow flex flex-col">
+                    <div class="mb-4">
+                        <h4 class="text-lg font-bold text-gray-800 mb-2">核心特色</h4>
+                        <ul class="text-gray-600 space-y-2 text-sm">
+                            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i><span><strong>會員制：</strong>主打高品質、大份量、低單價。</span></li>
+                            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i><span><strong>無條件退貨：</strong>業界最寬鬆的退貨機制。</span></li>
+                            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i><span><strong>獨家商品：</strong>Kirkland自有品牌與進口好物。</span></li>
+                        </ul>
+                    </div>
+                    <div class="bg-blue-50 p-4 rounded-lg mt-auto">
+                        <p class="text-sm text-blue-800 font-medium mb-1"><i class="fas fa-utensils mr-1"></i> 必吃美食</p>
+                        <p class="text-xs text-gray-600">熱狗堡、牛肉捲、凱薩沙拉、超大比薩。</p>
+                    </div>
+                    <button onclick="vote('costco')" class="mt-4 w-full py-2 border-2 border-blue-600 text-blue-600 rounded-lg hover:bg-blue-600 hover:text-white transition font-bold flex justify-center items-center group">
+                        <i class="far fa-heart mr-2 group-hover:scale-110 transition"></i> 我愛好市多 <span id="votes-costco" class="ml-2 text-xs bg-gray-100 px-2 py-0.5 rounded-full text-gray-600">12,540</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- 2. PX Mart 全聯福利中心 -->
+            <div class="brand-card bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 flex flex-col h-full">
+                <div class="h-40 pxmart-bg relative flex items-center justify-center">
+                    <div class="text-white text-center">
+                        <i class="fas fa-basket-shopping text-5xl mb-2"></i>
+                        <h3 class="text-2xl font-bold tracking-wider">PX MART</h3>
+                        <p class="text-sm opacity-90">全聯福利中心</p>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-white text-xs font-bold px-2 py-1 rounded text-blue-800">
+                        店數霸主
+                    </div>
+                </div>
+                <div class="p-6 flex-grow flex flex-col">
+                    <div class="mb-4">
+                        <h4 class="text-lg font-bold text-gray-800 mb-2">核心特色</h4>
+                        <ul class="text-gray-600 space-y-2 text-sm">
+                            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i><span><strong>巷口經濟：</strong>全台超過千家門市，最方便。</span></li>
+                            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i><span><strong>數位支付：</strong>PX Pay 使用率極高，點數經濟強。</span></li>
+                            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i><span><strong>生鮮甜點：</strong>We Sweet 甜點與豐富的生鮮區。</span></li>
+                        </ul>
+                    </div>
+                    <div class="bg-blue-50 p-4 rounded-lg mt-auto">
+                        <p class="text-sm text-blue-800 font-medium mb-1"><i class="fas fa-lightbulb mr-1"></i> 品牌印象</p>
+                        <p class="text-xs text-gray-600">「請支援收銀」、全聯先生、實在真便宜。</p>
+                    </div>
+                    <button onclick="vote('pxmart')" class="mt-4 w-full py-2 border-2 border-blue-600 text-blue-600 rounded-lg hover:bg-blue-600 hover:text-white transition font-bold flex justify-center items-center group">
+                        <i class="far fa-heart mr-2 group-hover:scale-110 transition"></i> 我愛全聯 <span id="votes-pxmart" class="ml-2 text-xs bg-gray-100 px-2 py-0.5 rounded-full text-gray-600">18,203</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- 3. Carrefour 家樂福 -->
+            <div class="brand-card bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 flex flex-col h-full">
+                <div class="h-40 carrefour-bg relative flex items-center justify-center">
+                    <div class="text-white text-center">
+                        <i class="fas fa-shopping-bag text-5xl mb-2"></i>
+                        <h3 class="text-2xl font-bold tracking-wider">Carrefour</h3>
+                        <p class="text-sm opacity-90">家樂福</p>
+                    </div>
+                    <div class="absolute top-4 right-4 bg-white text-xs font-bold px-2 py-1 rounded text-red-600">
+                        全方位通路
+                    </div>
+                </div>
+                <div class="p-6 flex-grow flex flex-col">
+                    <div class="mb-4">
+                        <h4 class="text-lg font-bold text-gray-800 mb-2">核心特色</h4>
+                        <ul class="text-gray-600 space-y-2 text-sm">
+                            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i><span><strong>多元店型：</strong>量販店、便利購超市、頂級超市。</span></li>
+                            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i><span><strong>異國商品：</strong>舉辦各國週（韓國、歐洲）促銷。</span></li>
+                            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i><span><strong>食物轉型：</strong>推動非籠飼雞蛋、有機商品。</span></li>
+                        </ul>
+                    </div>
+                    <div class="bg-blue-50 p-4 rounded-lg mt-auto">
+                        <p class="text-sm text-blue-800 font-medium mb-1"><i class="fas fa-info-circle mr-1"></i> 最新動態</p>
+                        <p class="text-xs text-gray-600">已正式併入統一集團，未來整合備受期待。</p>
+                    </div>
+                    <button onclick="vote('carrefour')" class="mt-4 w-full py-2 border-2 border-blue-600 text-blue-600 rounded-lg hover:bg-blue-600 hover:text-white transition font-bold flex justify-center items-center group">
+                        <i class="far fa-heart mr-2 group-hover:scale-110 transition"></i> 我愛家樂福 <span id="votes-carrefour" class="ml-2 text-xs bg-gray-100 px-2 py-0.5 rounded-full text-gray-600">10,892</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- 4. RT-Mart 大潤發 -->
+            <div class="brand-card bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 flex flex-col h-full">
+                <div class="h-40 rtmart-bg relative flex items-center justify-center">
+                    <div class="text-white text-center">
+                        <i class="fas fa-store text-5xl mb-2"></i>
+                        <h3 class="text-2xl font-bold tracking-wider">RT-MART</h3>
+                        <p class="text-sm opacity-90">大潤發</p>
+                    </div>
+                </div>
+                <div class="p-6 flex-grow flex flex-col">
+                    <div class="mb-4">
+                        <h4 class="text-lg font-bold text-gray-800 mb-2">核心特色</h4>
+                        <ul class="text-gray-600 space-y-2 text-sm">
+                            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i><span><strong>寬敞空間：</strong>走道寬闊，逛起來壓力較小。</span></li>
+                            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i><span><strong>生鮮強化：</strong>近年大幅改裝，生鮮區質感提升。</span></li>
+                            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i><span><strong>全聯體系：</strong>被全聯收購後，資源互補性強。</span></li>
+                        </ul>
+                    </div>
+                    <div class="bg-red-50 p-4 rounded-lg mt-auto">
+                        <p class="text-sm text-red-800 font-medium mb-1"><i class="fas fa-thumbs-up mr-1"></i> 網友評價</p>
+                        <p class="text-xs text-gray-600">烘焙區域與熟食區的CP值相當高。</p>
+                    </div>
+                    <button onclick="vote('rtmart')" class="mt-4 w-full py-2 border-2 border-red-500 text-red-500 rounded-lg hover:bg-red-500 hover:text-white transition font-bold flex justify-center items-center group">
+                        <i class="far fa-heart mr-2 group-hover:scale-110 transition"></i> 我愛大潤發 <span id="votes-rtmart" class="ml-2 text-xs bg-gray-100 px-2 py-0.5 rounded-full text-gray-600">5,430</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- 5. a.mart 愛買 -->
+            <div class="brand-card bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 flex flex-col h-full">
+                <div class="h-40 amart-bg relative flex items-center justify-center">
+                    <div class="text-white text-center">
+                        <i class="fas fa-leaf text-5xl mb-2"></i>
+                        <h3 class="text-2xl font-bold tracking-wider">a.mart</h3>
+                        <p class="text-sm opacity-90">愛買量販</p>
+                    </div>
+                </div>
+                <div class="p-6 flex-grow flex flex-col">
+                    <div class="mb-4">
+                        <h4 class="text-lg font-bold text-gray-800 mb-2">核心特色</h4>
+                        <ul class="text-gray-600 space-y-2 text-sm">
+                            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i><span><strong>在地人情：</strong>遠東集團旗下，深耕在地市場。</span></li>
+                            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i><span><strong>Happy Go：</strong>集點最方便，結合百貨資源。</span></li>
+                            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i><span><strong>永續店型：</strong>積極推動環保概念店（如水湳店）。</span></li>
+                        </ul>
+                    </div>
+                    <div class="bg-orange-50 p-4 rounded-lg mt-auto">
+                        <p class="text-sm text-orange-800 font-medium mb-1"><i class="fas fa-star mr-1"></i> 特別推薦</p>
+                        <p class="text-xs text-gray-600">不定期的「豐台灣」檔期，推廣在地農產。</p>
+                    </div>
+                    <button onclick="vote('amart')" class="mt-4 w-full py-2 border-2 border-orange-500 text-orange-500 rounded-lg hover:bg-orange-500 hover:text-white transition font-bold flex justify-center items-center group">
+                        <i class="far fa-heart mr-2 group-hover:scale-110 transition"></i> 我愛愛買 <span id="votes-amart" class="ml-2 text-xs bg-gray-100 px-2 py-0.5 rounded-full text-gray-600">3,120</span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Comparison Table Section -->
+    <section id="comparison" class="bg-white py-16">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-gray-800 text-center mb-10">一張表看懂適合誰？</h2>
+            <div class="overflow-x-auto rounded-xl shadow-lg">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-gray-800 text-white">
+                            <th class="p-4 rounded-tl-xl">品牌</th>
+                            <th class="p-4">主要客群</th>
+                            <th class="p-4">優勢關鍵字</th>
+                            <th class="p-4 rounded-tr-xl">適合情境</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-gray-700 text-sm md:text-base">
+                        <tr class="border-b border-gray-200 hover:bg-blue-50">
+                            <td class="p-4 font-bold text-blue-900">Costco 好市多</td>
+                            <td class="p-4">大家庭、公司行號、高品質追求者</td>
+                            <td class="p-4"><span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">會員制</span> <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">大量</span></td>
+                            <td class="p-4">週末大採購、囤貨、買進口零食</td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-blue-50">
+                            <td class="p-4 font-bold text-blue-600">全聯福利中心</td>
+                            <td class="p-4">家庭主婦/夫、上班族、小家庭</td>
+                            <td class="p-4"><span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">便利</span> <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">據點多</span></td>
+                            <td class="p-4">下班順路買菜、臨時缺日用品</td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-blue-50">
+                            <td class="p-4 font-bold text-red-600">家樂福</td>
+                            <td class="p-4">一般大眾、喜歡逛街的人</td>
+                            <td class="p-4"><span class="bg-red-100 text-red-800 px-2 py-1 rounded text-xs">齊全</span> <span class="bg-red-100 text-red-800 px-2 py-1 rounded text-xs">多樣化</span></td>
+                            <td class="p-4">一次買齊生活所需、家電、服飾</td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-red-50">
+                            <td class="p-4 font-bold text-gray-700">大潤發</td>
+                            <td class="p-4">一般家庭、預算型買家</td>
+                            <td class="p-4"><span class="bg-red-100 text-red-800 px-2 py-1 rounded text-xs">寬敞</span> <span class="bg-red-100 text-red-800 px-2 py-1 rounded text-xs">熟食強</span></td>
+                            <td class="p-4">喜歡舒適空間、購買便宜熟食</td>
+                        </tr>
+                        <tr class="hover:bg-orange-50">
+                            <td class="p-4 font-bold text-orange-600">愛買</td>
+                            <td class="p-4">在地居民、Happy Go卡友</td>
+                            <td class="p-4"><span class="bg-orange-100 text-orange-800 px-2 py-1 rounded text-xs">親切</span> <span class="bg-orange-100 text-orange-800 px-2 py-1 rounded text-xs">集點</span></td>
+                            <td class="p-4">搭配百貨活動、習慣傳統人情味</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-400 py-8 text-center">
+        <p class="mb-2">&copy; 2025 台灣賣場導覽指南. All rights reserved.</p>
+        <p class="text-xs">註：以上數據僅供參考，實際排名可能隨時間與調查機構不同而有所差異。</p>
+    </footer>
+
+    <script>
+        // Simple voting logic simulating local state
+        function vote(brand) {
+            const countElement = document.getElementById(`votes-${brand}`);
+            let currentVotes = parseInt(countElement.innerText.replace(/,/g, ''));
+            
+            // Add visual feedback
+            const btn = countElement.parentElement;
+            btn.innerHTML = `<i class="fas fa-check mr-2"></i> 已投票`;
+            btn.classList.add('bg-gray-100', 'border-gray-300', 'text-gray-500');
+            btn.classList.remove('text-blue-600', 'border-blue-600', 'text-red-500', 'border-red-500', 'text-orange-500', 'border-orange-500');
+            btn.disabled = true;
+
+            // Increment count
+            currentVotes++;
+            countElement.innerText = currentVotes.toLocaleString();
+            
+            // Simple toast
+            showToast(`感謝您為 ${brand.toUpperCase()} 投下一票！`);
+        }
+
+        function showToast(message) {
+            const toast = document.createElement('div');
+            toast.className = 'fixed bottom-4 right-4 bg-gray-800 text-white px-6 py-3 rounded shadow-lg transform translate-y-20 transition-transform duration-300 z-50';
+            toast.innerText = message;
+            document.body.appendChild(toast);
+            
+            setTimeout(() => {
+                toast.classList.remove('translate-y-20');
+            }, 100);
+
+            setTimeout(() => {
+                toast.classList.add('translate-y-20');
+                setTimeout(() => toast.remove(), 300);
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
